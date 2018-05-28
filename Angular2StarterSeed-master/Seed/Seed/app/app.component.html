@@ -1,0 +1,10 @@
+<div>
+    <h1>{{heading}}</h1>
+    <input type="text" [(ngModel)]="heading">
+    <!-- <input type="checkbox" [(ngModel)]="isStyled">
+    <input type="button" value="Change Heading!" [class]="isStyled ? 'ButtonStyle':'AnotherButtonStyle'" /> -->
+    <p *ngFor="let c of courses">
+      <course [details]="c"></course>
+    </p>
+    <course></course>
+</div>
